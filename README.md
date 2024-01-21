@@ -1,7 +1,6 @@
 # Basic dark mode slider
 
 A simple dark mode slider using html, css and js.
-Feel free to use this for whatever.
 
 <img width="222" alt="Screenshot 2024-01-16 142459" src="https://github.com/AtomicExpresso/Basic-dark-mode-slider/assets/156177896/fec11815-c3fb-4c63-88cf-ba030a7551e2">
 
