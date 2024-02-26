@@ -1,8 +1,24 @@
+:root {
+  --dark-mode-background-color: #1a1a1a;
+
+  --dark-mode-night-text-color: #fff;
+
+  --darkmode-night-shadow-color: rgb(144, 0, 255);
+  --darkmode-day-shadow-color: rgba(0, 157, 255, 0.658);
+}
+
+.dark-mode { /*Changes background color and text*/
+  background-color: var(--dark-mode-background-color);
+  color: var(--dark-mode-night-text-color);
+  transition: 0.3s;
+}
+
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
+  transition: 0.4s;
 }
 
 .switch input { 
@@ -20,7 +36,7 @@
   bottom: 0;
   background-color: #ccc;
   background-image: url(images/night.png);
-  box-shadow: 0 0 5px rgb(144, 0, 255);
+  box-shadow: 0 0 5px var(--darkmode-night-shadow-color);
   background-size: cover;
   -webkit-transition: .4s;
   transition: .4s;
@@ -41,7 +57,7 @@
 
 input:checked + .slider {
   background-image: url(images/day.png);
-  box-shadow: 0 0 5px rgba(0, 157, 255, 0.658);
+  box-shadow: 0 0 5px var(--darkmode-day-shadow-color);
   background-size: cover;
 }
 
@@ -65,8 +81,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.dark-mode { /*Changes background color and text*/
-  background-color: #1a1a1a;
-  color: #fff;
-  transition: 0.3s;
+.switch:hover{
+  scale: 0.95;
 }
